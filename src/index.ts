@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import pegjs from 'pegjs';
 import { readFileSync, writeFileSync, existsSync } from 'fs';
 import { createHash } from 'crypto';
@@ -26,7 +27,7 @@ function main(): void {
     .option('force', {
       alias: 'f',
       type: 'boolean',
-      default: 'false',
+      default: false,
     }).argv;
   for (const inputPath of argv._) {
     const parsed = path.parse(inputPath);

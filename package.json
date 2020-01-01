@@ -1,6 +1,6 @@
 {
   "name": "pegjs-make",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A better PEG.js compiler",
   "files": [
     "dist/*.js"
